@@ -77,7 +77,7 @@
     self.userInteractionEnabled = NO;
 }
 
-#pragma marks Properties
+#pragma mark Properties
 
 - (void)setProgressType:(M13ProgressConsoleProgressType)progressType
 {
