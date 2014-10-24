@@ -131,7 +131,7 @@
     }
 }
 
-#pragma marks Properties
+#pragma mark - Properties
 
 - (void)setProgressView:(M13ProgressView *)progressView
 {
@@ -384,7 +384,7 @@
 }
 
 - (void)deviceOrientationDidChange:(NSNotification *)notification {
-    UIDeviceOrientation deviceOrientation = [notification.object orientation];
+    UIDeviceOrientation deviceOrientation = [(UIDevice*)notification.object orientation];
 
     if (_shouldAutorotate && UIDeviceOrientationIsValidInterfaceOrientation(deviceOrientation)) {
         if (UIDeviceOrientationIsPortrait(deviceOrientation)) {

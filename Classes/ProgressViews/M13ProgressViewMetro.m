@@ -71,6 +71,11 @@
     _failureColor = [UIColor colorWithRed:249.0f/255.0f green:37.0f/255.0f blue:0 alpha:1];
 }
 
+- (id)copy
+{
+    return nil;
+}
+
 #pragma mark Setters
 
 - (void)setHighlighted:(BOOL)highlighted
